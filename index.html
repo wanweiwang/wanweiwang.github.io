@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-ul {
+#nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,27 +17,45 @@ ul {
   overflow: auto;
 }
 
-li a {
+#nav li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-li a.active {
+#nav li a.active {
   background-color: #04287a;
   color: white;
 }
 
-li a:hover:not(.active) {
+#nav li a:hover:not(.active) {
   background-color: #f57712;
   color: white;
 }
+
+#home img {
+  width: 800px;
+}
+
+#home.h1 {
+  color: white;
+}
+
+#profile {
+  list-style-type: none;
+  font-size: 28px;
+}
+
+#profile li {
+  height: 50px;
+}
+
 </style>
 </head>
 <body>
 
-<ul>
+<ul id="nav">
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#Profile">Profile</a></li>
   <li><a href="#Photographic">Photographic</a></li>
@@ -46,52 +64,54 @@ li a:hover:not(.active) {
 </ul>
 
 <div id="home" style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
-  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
+  <h1>Welcome to my home! &nbsp;&nbsp;: )</h1>
+  <img src="home.png">
 </div>
 
 
 <div id="Profile" style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
-  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
+  <h1>Profile</h1>
+  <ul id="profile">
+    <li>Name: Fred</li>
+    <li>Age: 12</li>
+    <li>Hobby: Swimming, Fishing</li>
+  </ul>
 </div>
 
 
-<div id="Photographic" style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
-  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
+<div id="Photographic" style="margin-left:25%;padding:1px 16px;">
+  <h1>Photographic</h1>
+  <div>
+    <img src="lc.jpg">
+    <img src="ys.jpg">
+    <img src="jz.jpg">
+    <img src="cf.jpg">
+    <img src="qm.jpg">
+    <img src="gy.jpg">
+    <img src="lx.jpg">
+    <img src="xm.jpg">
+    <img src="mz.jpg">
+    <img src="xz.jpg">
+    <img src="xs.jpg">
+    <img src="ds.jpg">
+    <img src="lq.jpg">
+    <img src="cs.jpg">
+    <img src="bl.jpg">
+    <img src="qf.jpg">
+    <img src="hl.jpg">
+    <img src="sj.jpg">
+    <img src="ld.jpg">
+    <img src="xx.png">
+    <img src="dx.jpg">
+    <img src="dz.jpg">
+    <img src="xh.jpg">
+    <img src="dh.jpg">
+  </div>
 </div>
 
 
 <div id="Games" style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
+  <h1>Fixed Full-height Side Nav</h1>
   <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
   <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
   <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
@@ -106,7 +126,7 @@ li a:hover:not(.active) {
 
 
 <div id="Friends" style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
+  <h1>Fixed Full-height Side Nav</h1>
   <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
   <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
   <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
